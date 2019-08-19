@@ -19,8 +19,8 @@ describe 'python::default' do
       expect { chef_run }.to_not raise_error
     end
 
-    it 'should install nginx' do
-      expect(chef_run).to include_recipe "poise-python"
+    it 'should install python-pip' do
+      expect(chef_run).to include_package "python-pip"
     end
   end
 end

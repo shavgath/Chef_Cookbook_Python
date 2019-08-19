@@ -7,6 +7,4 @@ apt_update "update_sources" do
   action :update
 end
 
-package "python-pip" do
-  action :install
-end
+include_recipe 'poise-python'

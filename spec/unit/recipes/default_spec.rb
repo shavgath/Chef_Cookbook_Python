@@ -20,7 +20,7 @@ describe 'python::default' do
     end
 
     it 'should install python-pip' do
-      expect(chef_run).to include_package "python-pip"
+      expect(chef_run).to include_package "python"
     end
   end
 end

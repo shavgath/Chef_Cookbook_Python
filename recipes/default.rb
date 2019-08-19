@@ -7,6 +7,6 @@ apt_update "update_sources" do
   action :update
 end
 
-package 'python-pip' do
+package 'python' do
   action :install
-end 
+end

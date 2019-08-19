@@ -8,5 +8,5 @@ apt_update "update_sources" do
 end
 
 package 'python-pip' do
-  action :isntall
-end 
+  action :install
+end

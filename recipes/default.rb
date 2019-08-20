@@ -15,6 +15,6 @@ package 'python-pip' do
   action :install
 end
 
-execute 'pip install requirements' do
-  command 'pip install -R requirements.txt'
+execute 'python-pip' do
+  command 'pip install -r requirements.txt'
 end

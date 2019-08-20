@@ -15,6 +15,10 @@ package 'python-pip' do
   action :install
 end
 
+package 'libncurses5-dev' do
+  action :install
+end
+
 execute 'python-pip' do
   command 'pip install Flask==0.10.1'
 end
